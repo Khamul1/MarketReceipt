@@ -79,9 +79,9 @@ public class Receipt {
         }
 
         sb.append("-------------------------------------\n");
-        sb.append(String.format("Сумма:      %.2f\n", totalSum));
-        sb.append(String.format("Скидка:     %.2f\n", discountSum));
-        sb.append(String.format("Итого:      %.2f\n", totalSum - discountSum));
+        sb.append(String.format("Сумма:      %.2f\n", this.totalSum)); // Используем this.totalSum
+        sb.append(String.format("Скидка:     %.2f\n", this.discountSum)); // Используем this.discountSum
+        sb.append(String.format("Итого:      %.2f\n", this.totalSum - this.discountSum)); // Используем this.totalSum и this.discountSum
         sb.append("-------------------------------------\n");
         return sb.toString();
     }

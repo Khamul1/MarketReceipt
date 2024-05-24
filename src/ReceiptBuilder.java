@@ -46,8 +46,8 @@ public class ReceiptBuilder {
         double totalSum = 0;
         for (Product product: receipt.getProducts()){
             totalSum += product.getPrice() * receipt.getQuantities().get(product);
-            receipt.setTotalSum(totalSum);
         }
+        receipt.setTotalSum(totalSum);
     }
     private String formatReceipt(Receipt receipt){
         return receipt.toString();
