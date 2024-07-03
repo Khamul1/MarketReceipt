@@ -13,6 +13,8 @@ public class Receipt {
         this.products = products;
         this.quantities = quantities;
         this.discountCard = discountCard;
+        this.discountSum = discountSum;
+        this.totalSum = totalSum;
     }
 
     public double calculateTotalSum() {
